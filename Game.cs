@@ -46,13 +46,13 @@ namespace DiceRoll_project
         {
             Console.WriteLine("You Gussed the Random Number, You Win!");
             Console.WriteLine("Game Over!");
-            return;
+            Environment.Exit(0);
         }
 
         static public void Over()
         {
             Console.WriteLine("You have no more chance left, Game Over!");
-            return;
+            Environment.Exit(0);
         }
     }
 }

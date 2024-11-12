@@ -25,6 +25,7 @@ namespace DiceRoll_project
 
                     Game.isGameOver = true;
                     Game.EndGame();
+                    
                 }
             }
                 return true;
