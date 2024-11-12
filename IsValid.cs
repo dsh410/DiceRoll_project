@@ -14,7 +14,7 @@ namespace DiceRoll_project
             }
             if (int.TryParse(guess, out int number))
             {
-                if (number < 0 || number > 3)
+                if (number < 0 || number > 3 || number != Dice.Roll)
                 {
                     
                     return false;
@@ -24,7 +24,7 @@ namespace DiceRoll_project
                 {
 
                     Game.isGameOver = true;
-                    Game.End();
+                    Game.EndGame();
                 }
             }
                 return true;
